@@ -86,8 +86,8 @@ if __name__ == '__main__':
     q, e, d, p, n = rsa()
     message = 11
     print("d=", d)
-    print(f'Public key: {e,n}')
-    print(f'Private key: {d,n}')
+    print(f'Public key: {n,e}')
+    print(f'Private key: {n,d}')
 
     print('Original message:', message)
     C= chinese_rem(message, q, p, d)
